@@ -12,7 +12,6 @@ Este repositório contém código e notebooks usados no projeto de previsão de 
 - Git
 
 
-git clone <repo-url>
 ## Instalação (passos rápidos)
 
 1. Clone o repositório (se ainda não tiver):
@@ -76,31 +75,7 @@ Uma figura que pode explanar isso é o Scatterplot que confronta Idade e BMI, e 
 
 ![Scatterplot - Idade vs BMI](assets/scatterplot-idadeBmi.png)
 
-
-- Executar a aplicação principal (ex.: via Makefile):
-
-```bash
-make app
-```
-
-- Ou diretamente com Python se aplicável:
-
-```bash
-python main.py
-```
-
-- Rodar o app Streamlit:
-
-```bash
-streamlit run streamlit/streamlit_app.py
-```
-
-- Se houver API FastAPI (em `src/api/app.py`), exemplo de execução local:
-
-```bash
-uvicorn src.api.app:app --reload
-```
-
+---
 
 ## Hierarquia do projeto
 
