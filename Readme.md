@@ -119,12 +119,12 @@ streamlit/
 
 Breve descrição das pastas principais:
 
-- `config`: arquivos de configuração e settings do projeto.
-- `data`: dados brutos e processados (não versionar dados sensíveis/public).
-- `notebooks`: análises exploratórias e notebooks de treinamento.
-- `src`: código-fonte (ETL, API, modelos, pré-processamento).
-- `streamlit`: aplicação front-end em Streamlit.
-- `catboost_info`: artefatos relacionados ao treinamento com CatBoost.
+- `config`: arquivos de configuração e settings do projeto
+- `data`: dados brutos e processados (dados sensíveis não são versionados)
+- `notebooks`: análises exploratórias e notebooks de treinamento
+- `src`: código-fonte (ETL, API, modelos, pré-processamento)
+- `streamlit`: aplicação front-end em Streamlit
+- `catboost_info`: artefatos relacionados ao treinamento com CatBoost
 
 
 ## Observações
