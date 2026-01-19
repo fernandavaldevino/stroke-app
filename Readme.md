@@ -40,6 +40,16 @@ pip install -r requirements.txt
 
 ---
 
+## Requisitos do sistema
+
+No macOS, o XGBoost precisa de uma biblioteca chamada `libomp`. Para instalá-la, só executar:
+
+```bash
+brew install libomp
+```
+
+---
+
 ## Como rodar
 
 - Antes de abrir o app, é necessário treinar o modelo:
