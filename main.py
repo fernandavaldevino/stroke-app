@@ -4,9 +4,9 @@ sys.path.insert(0, '/Users/fmbv/Documents/Fernanda/git/postech/stroke-app')
 from src.etl.etl import ETL
 
 if __name__ == "__main__":
-    print("----- Iniciando ETL -----")
     
     try:
+        print("----- Iniciando ETL -----")
         etl = ETL()
         etl.run()
         print("ETL executada com sucesso!")

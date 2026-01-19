@@ -153,3 +153,4 @@ if st.button("Testar Conexão com API"):
         st.error(f"❌ Não consegue conectar na API: {str(e)}")
 
 st.markdown("---")
+

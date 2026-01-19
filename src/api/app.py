@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from src.preprocessing.preprocessing import StrokePreprocessor
+from config.settings import TEST_SIZE, RANDOM_STATE, DATA_PROCESSED_PATH, MODEL_NAME, SCALER_NAME, ENCODERS_NAME
 import pickle
 import pandas as pd
 import traceback
@@ -14,13 +15,17 @@ def after_request(response):
     return response
 
 try:
+    model_path = DATA_PROCESSED_PATH / MODEL_NAME
+    scaler_path = DATA_PROCESSED_PATH / SCALER_NAME
+    encoders_path = DATA_PROCESSED_PATH / ENCODERS_NAME
+
     print("Carregando modelo...")
-    with open('training_stroke_model.pkl', 'rb') as f:
+    with open(model_path, 'rb') as f:
         model = pickle.load(f)
     print("✓ Modelo carregado")
     
     print("Carregando preprocessador...")
-    preprocessor = StrokePreprocessor('scaler_stroke.pkl', 'encoders_stroke.pkl')
+    preprocessor = StrokePreprocessor(scaler_path, encoders_path)
     print("✓ Preprocessador carregado")
     
 except Exception as e:

@@ -7,7 +7,7 @@ DATA_RAW_PATH = PROJECT_ROOT / 'data' / 'raw' / 'healthcare-dataset-stroke-data.
 DATA_PROCESSED_PATH = PROJECT_ROOT / 'data' / 'processed' 
 
 # Modelos
-MODEL_NAME = 'treated_stroke_model.pkl'
+MODEL_NAME = 'training_stroke_model.pkl'
 SCALER_NAME = 'scaler_stroke.pkl'
 ENCODERS_NAME = 'encoders_stroke.pkl'
 

@@ -7,11 +7,12 @@ Este repositório contém código e notebooks usados no projeto de previsão de 
 ## Requisitos
 
 - macOS / Linux / Windows
-- Python 3.9+ (recomendado 3.10+)
+- Python 3.9+ (recomendado 3.12+)
 - `make` (opcional, usado no Makefile)
 - Git
 
 
+git clone <repo-url>
 ## Instalação (passos rápidos)
 
 1. Clone o repositório (se ainda não tiver):
@@ -24,29 +25,24 @@ cd stroke-app
 2. Criar e ativar um ambiente virtual:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate    # macOS / Linux
 .\\.venv\\Scripts\\activate   # Windows (PowerShell/CMD)
 ```
+
+**Obs**: Caso tenha um alias para o comando ```python3```, utilizar o alias.
+
 
 3. Atualizar `pip` e instalar dependências:
 
 - Este repositório inclui um arquivo `requirements.txt`. Para instalar as dependências listadas, rode:
 
 ```bash
-pip install -U pip
-pip install -r requirements.txt
+pip3 install -U pip
+pip3 install -r requirements.txt
 ```
 
----
-
-## Requisitos do sistema
-
-No macOS, o XGBoost precisa de uma biblioteca chamada `libomp`. Para instalá-la, só executar:
-
-```bash
-brew install libomp
-```
+**Obs**: Caso tenha um alias para o comando ```pip3```, utilizar o alias.
 
 ---
 
@@ -55,19 +51,19 @@ brew install libomp
 - Antes de abrir o app, é necessário treinar o modelo:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
-- Abrir um terminal na pasta do projeto (stroke-app) e executar o comando:
+- Abrir um terminal **na pasta raiz do projeto** (stroke-app) e executar o comando:
 
 ```bash
-python src/api/app.py
+python3 -m src.api.app
 ```
 
-- Abrir outra aba do terminal na mesma pasta e executar o comando:
+- Abrir outra aba do terminal **na pasta raiz do projeto** e executar o comando:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run streamlit/streamlit_app.py
 ```
 
 - A aplicação irá abrir num browser.
@@ -85,7 +81,7 @@ Uma figura que pode explanar isso é o Scatterplot que confronta Idade e BMI, e 
 
 ![Scatterplot - Idade vs BMI](assets/scatterplot-idadeBmi.png)
 
----
+
 
 ## Hierarquia do projeto
 
@@ -129,12 +125,12 @@ streamlit/
 
 Breve descrição das pastas principais:
 
-- `config`: arquivos de configuração e settings do projeto
-- `data`: dados brutos e processados (dados sensíveis não são versionados)
-- `notebooks`: análises exploratórias e notebooks de treinamento
-- `src`: código-fonte (ETL, API, modelos, pré-processamento)
-- `streamlit`: aplicação front-end em Streamlit
-- `catboost_info`: artefatos relacionados ao treinamento com CatBoost
+- `config`: arquivos de configuração e settings do projeto.
+- `data`: dados brutos e processados (não versionar dados sensíveis/public).
+- `notebooks`: análises exploratórias e notebooks de treinamento.
+- `src`: código-fonte (ETL, API, modelos, pré-processamento).
+- `streamlit`: aplicação front-end em Streamlit.
+- `catboost_info`: artefatos relacionados ao treinamento com CatBoost.
 
 
 ## Observações
