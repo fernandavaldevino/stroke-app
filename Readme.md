@@ -9,8 +9,6 @@
 
 **Sistema inteligente de predição de risco de AVC (Acidente Vascular Cerebral) utilizando Machine Learning**
 
-[Características](#características) • [Arquitetura](#arquitetura) • [Instalação](#instalação) • [Como Usar](#como-usar) • [API](#api) • [Documentação](#documentação)
-
 </div>
 
 ---
