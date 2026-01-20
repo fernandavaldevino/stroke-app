@@ -1,5 +1,9 @@
 import sys
-sys.path.insert(0, '/Users/fmbv/Documents/Fernanda/git/postech/stroke-app')
+from pathlib import Path
+
+# Adicionar o diretório raiz do projeto ao sys.path
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 import logging
 

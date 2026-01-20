@@ -5,7 +5,7 @@
 # Python
 __pycache__/
 *.pyc
-
+*.pkl
 
 # Virtual Environments
 *_env/
@@ -17,3 +17,5 @@ __pycache__/
 
 # Others
 *.tfevents
+
+./data/*

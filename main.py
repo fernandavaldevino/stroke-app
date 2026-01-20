@@ -1,6 +1,10 @@
 import logging as log
 import sys
-sys.path.insert(0, '/Users/fmbv/Documents/Fernanda/git/postech/stroke-app')
+from pathlib import Path
+
+# Adicionar o diretório raiz do projeto ao sys.path
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
 
 from src.etl.etl import ETL
 
@@ -13,14 +17,14 @@ log.basicConfig(
 )
 
 if __name__ == "__main__":
-    
+
     try:
-        print("----- Iniciando ETL -----")
+        log.info("----- Iniciando ETL -----")
         etl = ETL()
         etl.run()
-        print("ETL executada com sucesso!")
+        log.info("ETL executada com sucesso!")
 
     except Exception as e:
-        print(f"Erro ao executar o ETL: {e}")
+        log.error(f"Erro ao executar o ETL: {e}")
         import traceback
         traceback.print_exc()
