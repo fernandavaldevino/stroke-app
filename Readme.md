@@ -15,19 +15,19 @@
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Características](#características)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Arquitetura do Sistema](#arquitetura-do-sistema)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Pipeline de Dados](#pipeline-de-dados)
-- [API REST](#api-rest)
-- [Modelo de Machine Learning](#modelo-de-machine-learning)
-- [Feature Importance](#feature-importance)
-- [Notebooks](#notebooks)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Características](#-características)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Arquitetura do Sistema](#-arquitetura-do-sistema)
+- [Pré-requisitos](#-pré-requisitos)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Pipeline de Dados](#-pipeline-de-dados)
+- [API REST](#-api-rest)
+- [Modelo de Machine Learning](#-modelo-de-machine-learning)
+- [Feature Importance](#-feature-importance)
+- [Notebooks](#-notebooks)
 
 ---
 
