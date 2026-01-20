@@ -1,13 +1,12 @@
 import logging as log
 import sys
 from pathlib import Path
+from src.etl.etl import ETL
+
 
 # Adicionar o diretório raiz do projeto ao sys.path
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
-
-from src.etl.etl import ETL
-
 
 # Configurar o logging
 log.basicConfig(

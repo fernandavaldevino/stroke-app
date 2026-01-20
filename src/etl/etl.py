@@ -1,15 +1,14 @@
 import sys
-from pathlib import Path
-
-# Adicionar o diretório raiz do projeto ao sys.path
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
-
 import logging
+from pathlib import Path
 
 from src.etl.extract import Extract
 from src.etl.transform import Transform
 from src.models.model_training import ModelTraining
+
+# Adicionar o diretório raiz do projeto ao sys.path
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 class ETL():
     def __init__(self):
