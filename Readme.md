@@ -472,26 +472,30 @@ print(response.json())
 O **Logistic Regression** foi escolhido por suas vantagens:
 
 • ✅ Simples e interpretável
+
 • ✅ Rápido tempo de treinamento e predição
+
 • ✅ Baixo custo computacional
+
 • ✅ Fornece probabilidades de classificação
+
 • ✅ Funciona bem com problemas linearmente separáveis
+
 • ✅ Regularização integrada (L1/L2) previne overfitting
+
 • ✅ Excelente baseline para comparação com outros modelos
+
 • ✅ Funciona bem com alta dimensionalidade
+
 • ✅ Requer pouca memória
+
 • ✅ Probabilidades calibradas por padrão
+
 
 
 ### Métricas de Avaliação
 
-| Métrica | Valor |
-|---------|-------|
-| Acurácia | 74.6% |
-| Precisão | 17.8% |
-| Recall | 76.00% |
-| F1-Score | 28.8% |
-| AUC-ROC | 0.837 |
+![Comparação das Métricas dos Modelos Utilizados](assets/comparacao_modelos.png)
 
 **Obs:** Devido ao desbalanceamento dos dados, o foco não deve ser a Acurácia, mas sim o Recall (Sensibilidade), para garantir que o máximo de casos positivos seja identificado pelo modelo.
 
@@ -508,6 +512,9 @@ Matriz de Confusão:
 O dataset apresenta desbalanceamento significativo (stroke vs. não-stroke). Técnicas aplicadas:
 
 - **SMOTE** (Synthetic Minority Over-sampling Technique)
+
+![Antes e Depois do SMOTE](assets/smote.png)
+
 - **Class Weights**: Ajuste de pesos nas classes
 - **Threshold Tuning**: Ajuste do limiar de decisão (0.6 ao invés de 0.2)
 
