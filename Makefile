@@ -3,20 +3,15 @@ PROJECT_PATH := $(shell pwd)	# pega o path do projeto atual
 
 train:
 	@echo "📊 Treinando modelo..."
-	python main.py
+	python3 main.py
 
 api:
-	@echo "🔧 Iniciando API Flask na porta 5000..."
-	python src/api/main.py
+	@echo "🔧 Iniciando API Flask..."
+	python3 -m src.api.app
 
 streamlit:
-	@echo "🎨 Iniciando Streamlit na porta 8501..."
+	@echo "🎨 Iniciando Streamlit..."
 	streamlit run streamlit/streamlit_app.py --server.port=8501
-
-etl:
-	@echo "⚙️ Executando ETL completo..."
-	python main.py
-
 
 app:
 	@echo "🚀 Iniciando o App"
