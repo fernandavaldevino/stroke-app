@@ -203,7 +203,7 @@ Antes de executar o app, é necessário observar os seguintes pontos:
 
 **Obs 2:** Antes de dar o comando abaixo, certifique-se de substituir o ```<path>``` do comando: ```sys.path.insert(0, '<path>stroke-app')``` pelo seu _path_ absoluto, nos arquivos abaixo:
 
-- ```src/api/app.py```: 
+- ```src/etl/etl.py```: 
 - ```main.py```: 
 
 
@@ -487,11 +487,13 @@ O **Logistic Regression** foi escolhido por suas vantagens:
 
 | Métrica | Valor |
 |---------|-------|
-| Acurácia | 74.6% | >> Não aconselhável para modelos 
+| Acurácia | 74.6% |
 | Precisão | 17.8% |
 | Recall | 76.00% |
 | F1-Score | 28.8% |
 | AUC-ROC | 0.837 |
+
+**Obs:** Devido ao desbalanceamento dos dados, o foco não deve ser a Acurácia, mas sim o Recall (Sensibilidade), para garantir que o máximo de casos positivos seja identificado pelo modelo.
 
 
 Matriz de Confusão:
